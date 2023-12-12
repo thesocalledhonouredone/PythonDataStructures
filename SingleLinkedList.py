@@ -16,7 +16,7 @@ class SingleLinkedList:
         currentNode.next = newNode
 
     def printList(self):
-        currentNode = self.head
+        currentNode = self.head.next
         while currentNode != None:
             print(currentNode.data)
             currentNode = currentNode.next
@@ -24,8 +24,16 @@ class SingleLinkedList:
 
     def lengthOfList(self):
         len = 0
-        currentNode = self.head
+        currentNode = self.head.next
         while currentNode:
             len += 1
             currentNode = currentNode.next
-        print("Length of List: ", len-1)
+        print("Length of List: ", len)
+
+    def visualizeList(self):
+        currentNode = self.head.next
+        while currentNode:
+            print(currentNode.data, " -> ", end="")
+            currentNode = currentNode.next
+
+        print("END")
