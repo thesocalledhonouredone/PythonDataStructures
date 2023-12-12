@@ -35,5 +35,4 @@ class SingleLinkedList:
         while currentNode:
             print(currentNode.data, " -> ", end="")
             currentNode = currentNode.next
-
         print("END")
