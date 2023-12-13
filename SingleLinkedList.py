@@ -36,3 +36,24 @@ class SingleLinkedList:
             print(currentNode.data, " -> ", end="")
             currentNode = currentNode.next
         print("END")
+
+    def isEmpty(self):
+        if self.head.next == None:
+            print("List is Empty")
+        else:
+            print("List is NOT Empty")
+
+    def reverseList(self):
+        reverse = []
+        currentNode = self.head.next
+        while currentNode:
+            reverse.append(currentNode.data)
+            currentNode = currentNode.next
+
+        print("Reversed List: ")
+        reverse.reverse()
+        for i in reverse:
+            print(i)
+
+    
+
