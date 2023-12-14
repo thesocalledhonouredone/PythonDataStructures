@@ -1,42 +1,42 @@
 from Stack import Stack
 
 # creating a stack
-x = Stack()
+myStack = Stack()
 
 # pushing values 10, 20, 30
-x.push(10)
-x.push(20)
-x.push(30)
+myStack.push(10)
+myStack.push(20)
+myStack.push(30)
 
 # printing / PEEKING into a stack
-x.peek()
+myStack.peek()
 
 # pushing 40, 50, 60 into the stack
-x.push(40)
-x.push(50)
-x.push(60)
+myStack.push(40)
+myStack.push(50)
+myStack.push(60)
 print()
-x.peek()
+myStack.peek()
 
 # deleting / POPPING vales from a stack
-x.pop()
-x.pop()
+myStack.pop()
+myStack.pop()
 print()
-x.peek()
+myStack.peek()
 
 # pushing multiple values into stack
-x.pushes(100, 200, 300)
+myStack.pushes(100, 200, 300)
 print()
-x.peek()
+myStack.peek()
 
 # popping multiple values
-x.pops(5)
+myStack.pops(5)
 print()
-x.peek()
+myStack.peek()
 
 # deleting stack
 print()
-x.__del__()
+myStack.__del__()
 
 
 """
